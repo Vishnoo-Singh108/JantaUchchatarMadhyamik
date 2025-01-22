@@ -1,0 +1,375 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    color: white;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #004aad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-align: center;
+    flex: 1;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.1em;
+    text-align: right;
+    align-content: flex-end;
+    flex: 1;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+/* Navigation Styles */
+.links ul {
+    display: flex;
+    background-color: #023981;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.2em;
+    color: white;
+}
+
+.links a:hover {
+    color: rgb(65, 236, 65);
+    background-color: #021f45;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.stu {
+    width: 18em;
+    margin-top: 2em;
+}
+
+.main h2 {
+    color: rgb(163, 126, 5);
+    font-style: italic;
+    font-size: 1.8em;
+    align-content: center;
+}
+
+.main p {
+    color: red;
+    font-weight: 700;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.main2 {
+    margin: 35px;
+    background-color: aqua;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.main2 p {
+    color: rgb(18, 18, 235);
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+/* Principal Section Styles */
+.principal {
+    margin: 35px;
+    border-radius: 15px;
+    background-color: aqua;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.manisirji {
+    width: 230px;
+    height: auto;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.name {
+    font-size: 1.5rem;
+    color: rgb(90, 24, 24);
+    font-weight: 800;
+}
+
+.principal p {
+    margin: 15px;
+    color: blue;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.animation-container {
+    text-align: center;
+  }
+  
+  .bouncing-text {
+    font-size: 3rem;
+    color: #1565c0;
+    animation: bounce 2s infinite;
+    margin-top: 10px;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(40px);
+    }
+  }
+.foot{
+    display: flex;
+    justify-content: center;
+}
+/* Gallery Styles */
+.img1 {
+    width: 100%;
+    height: 300px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 15px;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.box2 {
+    overflow: hidden;
+    margin: 5px;
+    flex: 1 1 calc(50% - 10px); /* Responsive flexbox */
+}
+
+/* Section Headings */
+.gell, .abo, .about, .vision, .mission {
+    font-weight: bolder;
+    color: blue;
+    margin-left: 2em;
+}
+.box{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 5px;
+}
+
+.p1 {
+    color: black;
+    font-size: large;
+    margin: 10px;
+}
+
+ul li {
+    color: black;
+    font-size: large;
+    margin: 5px;
+}
+
+/* Toppers Section */
+/* Toppers Section */
+.toppers {
+    margin: 28px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top img {
+    flex: 1 1 calc(33% - 10px); /* Responsive flexbox */
+    height: 200px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 15px;
+}
+
+/* Contact Section */
+.icon {
+    color: blue;
+    font-size: 40px;
+    margin: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1, header p {
+        flex: unset;
+        margin: 10px 0;
+    }
+
+    .links ul {
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 96%;
+        transition: 0.3s;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+}
+#backToTop {
+    display: none; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #004aad;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+.contact{
+    background-color: #848484;
+
+}
+#backToTop:hover {
+    background-color: #555;
+}
+
+
+/* Button Styles */
+#prevButton, #nextButton {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: #021f45;
+}
+
+/* Ensure the parent div has a relative position */
+.img {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+/* Adjust button positioning */
+#prevButton {
+    margin-right: auto;
+}
+
+#nextButton {
+    margin-left: auto;
+}
+.abo{
+    background-color: cornflowerblue;
+    margin: 0%;
+}
+.box:hover{
+    box-shadow: 0px 5px 20px black;
+    border-radius: 15px;
+    width: 100%;
+
+}
+.img2{
+    width: 370px;
+    height: 250px;
+    border-radius: 15px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.img2:hover{
+    box-shadow: 0px 5px 20px black;
+border-radius: 15px;
+width: 390px;
+height: 270px;
+}
+.icon:hover{
+    box-shadow: 2px 2px 15px #0714fe;
+    border-radius: 50%;
+}
